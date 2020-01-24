@@ -11,9 +11,9 @@ void afficherScore() {
 	Printf();
 }
 
-char TableauJeu[y][x] = { 0 }; /* chaine de caract�re a deux dimensions y et x */
+char TableauJeu[y][x] = { 0 }; /* chaine de caractère a deux dimensions y et x */
 
-void displayTableuJeu() {   /* cr�er un tableux pour mettre les pi�ces, par d�faut c'est ' ' */
+void displayTableuJeu() {   /* créer un tableux pour mettre les pièces, par défaut c'est ' ' */
 
 	for (int row = 0; row < y; row++) {
 		for (int col = 0; col < x; col++) {
@@ -24,7 +24,7 @@ void displayTableuJeu() {   /* cr�er un tableux pour mettre les pi�ces, par 
 
 }
 
-int resultat() {/* s'il y a gagnant, il y a un r�sultat, elle return 1 */
+int resultat() {/* s'il y a gagnant, il y a un résultat, elle return 1 */
 	if ( /**/) {
 		return 0;
 	}
@@ -32,7 +32,7 @@ int resultat() {/* s'il y a gagnant, il y a un r�sultat, elle return 1 */
 	return 1;
 }
 
-int rempli() {/* il y a un tab, il faut le parcourir, parcourir le d'abord en y, apres en x, v�rifie si toutes les cases sont remplies, si oui return 1*/
+int rempli() {/* il y a un tab, il faut le parcourir, parcourir le d'abord en y, apres en x, vérifie si toutes les cases sont remplies, si oui return 1*/
 	for (int row = 0; row < y; row++) {
 		for (int col = 0; col < x; col++) {
 			if (TableauJeu[row][col] = ' ') {
@@ -46,9 +46,22 @@ int rempli() {/* il y a un tab, il faut le parcourir, parcourir le d'abord en y,
 } /* on applique la fonction rempli si la fonction juge */
 
 void afficherJeux() {
-	printf("|%c|%c|%c|\n", );
+	for (int row = 0;  row<= y; row++){
+		printf("|%c|%c|%c|%c|%c|%c|%c|\n", TableauJeu[row][0], TableauJeu[row][1], TableauJeu[row][2], TableauJeu[row][3], TableauJeu[row][4], TableauJeu[row][5], TableauJeu[row][6]);
+		if (row == y) {
+			printf("|--|--|--|--|--|--|--|\n");
+		}
+	}
 
 }
+
+//ModeJeu
+
+void Move() {
+	
+
+}
+
 
 
 
